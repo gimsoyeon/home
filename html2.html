@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 계정 만들기 </title>
+<style>
+    p {color: red; font-size: 10pt;}
+    h3 {font-weight: bold; background: lightblue; width:800px; padding-left: 10px;}
+    div {margin-left: 8px; width: 130px; padding-right: 8px; display: inline-block; text-align: right;}
+    span {color: red;}
+    h5 {margin-left: 200px;}
+
+</style>
+</head>
+<body>
+<h2> 취업 정보 계정 만들기 </h2>
+<p>* 필수 입력 항목</p>
+<h3>기본 정보</h3>
+<form>
+
+    <div>이름<span>*</span> </div> <input type="text" value=" " maxlength="8"> <br>
+    <div> 이메일<span>*</span> </div> <input type="email" placeholder="id@domain_name" maxlength="15"> <br>
+    <div> 암호<span>*</span> </div> <input type="password" value="" maxlength="12"> <br>
+    <div> 암호 확인<span>*</span> </div> <input type="password" value="" maxlength="12"> <br>
+    <div> 모바일 폰<span>*</span> </div> <input type="tel" placeholder="010-1234-5678" maxlength="13"> <br>
+    <div> 개인 홈페이지 </div> <input type="url" placeholder="http://" maxlength="30"> <br>
+    <div> 주소<span>*</span> </div> <input type="text" maxlength="30"><br>
+
+<h3>학력</h3>
+
+    <div>학교 명<span>*</span> </div> <input type="text" maxlength="12"><br>
+    <div>전공<span>*</span> </div> <input type="text" maxlength="12"><br>
+    <div>졸업 여부<span>*</span> </div> <select>
+            <option value="1"> --선택-- </option>
+            <option value="2"> 졸업예정 </option>
+            <option value="3"> 졸업 </option>
+        </select>
+<br>
+    <div>졸업(예정)일 </div> <input type="date" value="연도 -월 -일"><br>
+<br>
+    <h3>업무 경력</h3>
+<br>
+    <div>근무업체명 </div> <input type="text" maxlength="20"><br>
+    <div>직위 </div> <input type="text" maxlength="10"><br>
+    <div>담당 업무 </div> <textarea cols="80" rows="10">
+            이전 업체에서 담당한 업무를 기술하시오.
+                </textarea><br>
+    <div>근무년수 </div> <input type="number" min="0" max="10" step="0.5">년<br>
+
+<h3>자기소개서</h3><br>
+
+    <div>첨부파일 </div> <input type="file">
+            <h5><input type="submit" value="제출">
+                <input type="reset" value="재작성"></h5>
+</form>
+</body>
+</html>
